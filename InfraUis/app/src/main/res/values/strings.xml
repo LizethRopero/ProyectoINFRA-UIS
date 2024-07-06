@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">InfraUis</string>
+    <string-array name="ubicaciones_array">
+        <item>Ciencias Humanas 1</item>
+        <item>Ciencias Humanas 2</item>
+        <item>Laboratorio Pesados</item>
+        <item>Camilo Torres</item>
+        <item>Jorge Bautista Vesga</item>
+        <item>CENTIC</item>
+        <item>Biblioteca</item>
+        <item>Bienestar PRO</item>
+        <item>Bienestar estudiantil</item>
+        <item>Edificio Industrial</item>
+        <item>Edificio Mecánica</item>
+        <item>Auditorio Luis A. Calvo</item>
+    </string-array>
+    <string-array name="estados_array">
+        <item>Pendiente</item>
+        <item>Ejecucion</item>
+    </string-array>
+</resources>

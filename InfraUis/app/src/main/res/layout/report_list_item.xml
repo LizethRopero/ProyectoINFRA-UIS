@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/reportIcon"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:src="@drawable/ic_report_paper" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/reportName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Name"
+            android:textColor="#263430"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reportLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Location"
+            android:textColor="#263430"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/reportStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Status"
+            android:textColor="#263430"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

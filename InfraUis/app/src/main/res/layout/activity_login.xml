@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FD7C6"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/BienvenidoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="BIENVENIDO"
+        android:textColor="#263430"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="850px"
+        android:layout_height="650px"
+        android:layout_below="@+id/BienvenidoTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/logo" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="Iniciar sesión"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="¿Olvidaste tu contraseña? Click aquí"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:autoLink="none" />
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logoImageView"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:hint=" Corrreo"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextTextEmailAddress"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:hint=" Contraseña"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageViewPassword"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/editTextTextPassword"
+        android:layout_alignEnd="@+id/editTextTextPassword"
+        android:layout_alignBottom="@+id/editTextTextPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/key" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/editTextTextEmailAddress"
+        android:layout_alignEnd="@+id/editTextTextEmailAddress"
+        android:layout_alignBottom="@+id/editTextTextEmailAddress"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_email" />
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FD7C6"
+    tools:context=".ReportDetailActivity">
+
+    <TextView
+        android:id="@+id/BienvenidoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Detalles del reporte"
+        android:textColor="#263430"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/reportDetailImageView"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/BienvenidoTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/reportDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportDetailImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Report Name"
+        android:textColor="#263430"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reportDetailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportDetailLocation"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Report Description"
+        android:textColor="#263430"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/reportDetailLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportDetailName"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Report Ubication"
+        android:textColor="#263430"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/reportDetailStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportDetailDescription"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Estado: "
+        android:textColor="#263430"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/modifyReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportDetailStatus"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Modificar Reporte"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/reportButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/report" />
+
+        <ImageButton
+            android:id="@+id/viewReportButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/viewreports" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/perfil" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "812760413088",
+    "project_id": "infra-76859",
+    "storage_bucket": "infra-76859.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812760413088:android:9f3c7932c3dca0d34caac5",
+        "android_client_info": {
+          "package_name": "com.proyecto.infrauis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVy4_Ns3R_yEUIw60kO1ip6_GunfIp7vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

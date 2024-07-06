@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FD7C6"
+    tools:context=".ReportActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#263430"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="CREACIÓN DE REPORTES" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/MapUisImageView"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/mapauis" />
+
+    <EditText
+        android:id="@+id/reportNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lblNameReport"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/lblDescripcionReport"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/attachPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="Adjuntar foto"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/selectedImageNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attachPhotoButton"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#263430"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/sendReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Enviar Reporte"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/home"/>
+
+        <ImageButton
+            android:id="@+id/reportButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/report"/>
+
+        <ImageButton
+            android:id="@+id/viewReportButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/viewreports"/>
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="#9FD7C6"
+            android:src="@drawable/perfil"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblNameReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MapUisImageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Nombre del reporte"
+        android:textColor="#263430"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lblUbicacionReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locationSpinner"
+        android:layout_below="@+id/MapUisImageView"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-15dp"
+        android:layout_toEndOf="@+id/lblNameReport"
+        android:text="Ubicación del reporte"
+        android:textColor="#263430"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblDescripcionReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reportNameEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Descripción del reporte"
+        android:textColor="#263430"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/locationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/MapUisImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/lblNameReport"
+        android:background="@color/white"/>
+
+
+</RelativeLayout>
